@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli('localhost', 'root', 'root', 'todo-list'); //connecting to database on phpmyadmin
+$mysqli = new mysqli('localhost', 'root', 'root', 'todo-list'); //connecting to database on phpmyadmin(already fixed 5.1 error)
 if ($mysqli->connect_error){//if theres a connection error
 	die('Connect Error (' . $mysqli->connect_errno . ')'//kill it
 		. $mysqli->connect_error);//if theres an error
