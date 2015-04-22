@@ -8,5 +8,5 @@ else{//if not
 	echo"Connection made";// tell user that connection has been made
 }
 $mysqli->close();////closes mysqli
-
+//
 ?>
