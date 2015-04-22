@@ -1,2 +1,26 @@
 @import "reset.css";
+/*importing reset.css file*/
 @import "normalize.css";
+/*importing mormalize.css file*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700); /*font from google*/
+
+body {
+	font: normal 14px 'Open Sans', Arial, sans-serif; /*body font*/
+	color: #999; /*body color*/
+	background: #f1f1f1;
+}
+
+	.wrap{/*styling for wrap*/
+		width: 400px; /*width is 400px*/
+		margin: 0 auto;/*margin 0 auto*/
+	}
+
+	.task-list{/*styling for task list*/
+		width: 88%; /*88% width*/
+		min-height: 300px; /*minimum height is 300px*/
+		background: #fff; /*backgroung is #fff*/
+		box-shadow: 2px 2px 0px #ddd; /*box shadow size*/
+		margin-top: 40px; /*margin from top of screen is 40px*/
+		padding: 22px 6%; /*padding is 22px and 6%*/
+	}
