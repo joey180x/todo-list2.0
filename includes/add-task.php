@@ -14,7 +14,7 @@
 		while ($row = $result->fetch_assoc())
 			$task_id = $row['id'];
 			$task_name = $row['task'];
-			]
+			
 	}
 
 	$mysqli->close();
