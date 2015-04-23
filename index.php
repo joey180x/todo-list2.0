@@ -3,6 +3,8 @@
 <head>
 	<title>To-do List 2.0</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 <body>
 	<div class="wrap">
@@ -32,7 +34,7 @@
 		<input type="text" name="new-task" placeholder="Add new item.."/>
 	</form>
 </body>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script>
 	add_task();//calling the add task function
 
