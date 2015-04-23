@@ -5,7 +5,7 @@ if ($mysqli->connect_error){//if theres a connection error
 		. $mysqli->connect_error);//if theres an error
 }
 else{//if not
-	echo"Connection made";// tell user that connection has been made
+	//echo"Connection made";// tell user that connection has been made
 }
 $mysqli->close();//closes mysqli
 ?>

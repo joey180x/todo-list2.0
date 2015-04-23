@@ -8,7 +8,24 @@
 	<div class="wrap">
 		<div class="task-list">
 			<ul>
-				<?php require("includes/connect.php"); ?>
+			<?php require("includes/connect.php");//requiring connect.php file to connect to database-->
+				 $mysqli = new mysqli('localhost', 'root', 'root', 'todo-list');//connecting to database
+				$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";//query information, order by date and time
+				if ($result = $mysqli->query($query)) {//if result is a query
+					$numrows = $result->num_rows;//number of rows
+					if ($numrows>0) {//if number of rows is gretaer than 0
+						while($row = $result->fetch_assoc()){//fetch associated
+							$task_id = $row['id'];//task id
+							$task_name = $row['task'];//and task name
+
+							echo "<li>
+							<span>'.$task_name'
+							";
+						}
+					}
+				}
+
+				?>
 			</ul>
 		</div>
 	<form class="add-new-task" autocomplete="off">
