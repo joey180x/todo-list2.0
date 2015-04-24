@@ -7,9 +7,13 @@
 
 body {
 	font: normal 14px 'Open Sans', Arial, sans-serif; /*body font*/
+	background-image: url(../images/download.jpg);
 	color: #999; /*body color*/
-	background: #f1f1f1;
-}
+ 	background-repeat: repeat;
+ 	background-attachment: fixed;
+ 	width:100%;
+ 	height:100%;
+	}
 
 	.wrap{/*styling for wrap*/
 		width: 400px; /*width is 400px*/
@@ -24,3 +28,11 @@ body {
 		margin-top: 40px; /*margin from top of screen is 40px*/
 		padding: 22px 6%; /*padding is 22px and 6%*/
 	}
+	@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+  	body {
+    background: #f1f1f1;
+    width: 100%;
+    font-size: 100px;
+
+  }
+}

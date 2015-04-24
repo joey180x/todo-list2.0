@@ -18,11 +18,11 @@
              header("Location: " . $path . "todo.php");
          }
          else {
-         	 echo "<p>Invalid username and password</p>";
+         	 //echo "<p>Invalid username and password</p>";
          }
     }
     else {
-    	echo "<p>Invalid username and password</p>";
+    	//echo "<p>Invalid username and password</p>";
     }
 
 
