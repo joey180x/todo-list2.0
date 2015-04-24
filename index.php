@@ -11,7 +11,7 @@
 			<?php require("includes/connect.php");//requiring connect.php file to connect to database-->
 				 $mysqli = new mysqli('localhost', 'root', 'root', 'todo-list');//connecting to database
 				$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";//query information, order by date and time
-				if ($result = $mysqli->query($query)) {//if result is a query
+				if($result = $mysqli->query($query)) {//if result is a query
 					$numrows = $result->num_rows;//number of rows
 					if ($numrows>0) {//if number of rows is gretaer than 0
 						while($row = $result->fetch_assoc()){//fetch associated
@@ -41,7 +41,7 @@
 			var new_task = $('.add-new-task input[name=new-task').val();
 
 			if (new_task != '') {
-				$.post('includes/add-task.php', { task: new_task}, function(data) {
+				$.post('includes/add-task.php', {task: new_task}, function(data) {
 					$('add-new-task input[name=new-task]').val();
 						$(data).appendTo('.task-list ul').hide().fadeIn();
 				});
@@ -51,14 +51,14 @@
 	}
 
 	$('.delete-button').click(function(){//delete button function
-		var current_element = $(this) = $(this); //variable this is the current element
-		var task_id = $(this).attr('id');// method returns undefined for attributes that have not been set.
+			var current_element = $(this); //variable this is the current element
+			var task_id = $(this).attr('id');// method returns undefined for attributes that have not been set.
 
-		$.post('includes/delete-task.php', {id: task_id}, function(){//post deleted task
-		current_element.parent().fadeOut("fast", function(){//fade out fast when task is deleted
-			$(this).remove();//remove this
-		});
+			$.post('includes/delete-task.php', {id: task_id}, function(){//post deleted task
+					current_element.parent().fadeOut("fast", function(){//fade out fast when task is deleted
+							$(this).remove();//remove this
+					});
+			});
 	});
-});
 </script>
 </html>
