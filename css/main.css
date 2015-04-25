@@ -8,7 +8,7 @@
 body {
 	font: normal 14px 'Open Sans', Arial, sans-serif; /*body font*/
 	background-image: url(../images/download.jpg);
-	color: #999; /*body color*/
+	color: red; /*body color*/
  	background-repeat: repeat;
  	background-attachment: fixed;
  	width:100%;
@@ -17,7 +17,14 @@ body {
 
 	.wrap{/*styling for wrap*/
 		width: 400px; /*width is 400px*/
+		height: 600px;
 		margin: 0 auto;/*margin 0 auto*/
+		padding-top: 100px;
+	}
+	.add-new-task{
+		padding-top: 10px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	.task-list{/*styling for task list*/
@@ -30,7 +37,6 @@ body {
 	}
 	@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
   	body {
-    background: #f1f1f1;
     width: 100%;
     font-size: 100px;
 

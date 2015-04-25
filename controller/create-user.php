@@ -15,7 +15,7 @@
     	   .  "salt = '$salt'");
 
     if ($query) {
-    	//echo "Successfully created users: $username";
+    	echo "Successfully created users: $username";
     }
     else {
     	 //echo "<p>" . $_SESSION["connection"]->error. "</p>";
