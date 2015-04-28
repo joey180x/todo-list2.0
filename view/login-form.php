@@ -3,21 +3,21 @@
 
  ?>
 
- <h1>Login</h1>
+ <h1 class="login-header">Login</h1>
 
  <form method="post" action="<?php echo $path . "controller/login-user.php"; ?>"> 	
       <div>
-		<label for="username">Username: </label>
-		<input type="text" name="username" />
+		<label class="username" for="username">Username: </label>
+		<input class= "username-box" type="text" name="username" />
 	</div>
 
 	<div>
-		<label for="password">Password: </label>
-		<input type="password" name="password" />
+		<label class="password" for="password">Password: </label>
+		<input class="password-box" type="password" name="password" />
 	</div>
 
 	<div>
-		<button type="submit">Submit:</button>
+		<button class="submit" type="submit">Submit:</button>
 	</div>
  </form>
 

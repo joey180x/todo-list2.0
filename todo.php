@@ -52,12 +52,12 @@
 		});
 	}
 
-	$('.delete-button').click(function(){//delete button function
+	$('.task-list').on("click", ".delete-button", function() {//delete button function
 			var current_element = $(this); //variable this is the current element
 			var task_id = $(this).attr('id');// method returns undefined for attributes that have not been set.
 
-			$.post('includes/delete-task.php', {id: task_id}, function(){//post deleted task
-					current_element.parent().fadeOut("fast", function(){//fade out fast when task is deleted
+			$.post('includes/delete-task.php', {id: task_id}, function() {//post deleted task
+					current_element.parent().fadeOut("fast", function() {//fade out fast when task is deleted
 							$(this).remove();//remove this
 					});
 			});
